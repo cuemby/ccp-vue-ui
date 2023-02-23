@@ -34,7 +34,7 @@ export default defineConfig({
       entry: "src/components/main.ts",
       name: 'ccp-vue',
       formats: ["es", "cjs", "umd"],
-      fileName: format => `cpp-vue.${format}.js`
+      fileName: format => `ccp-vue.${format}.js`
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
