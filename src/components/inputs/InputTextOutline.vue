@@ -50,7 +50,7 @@
 
 <script lang="ts">
 import {computed, defineComponent, toRefs, ref} from 'vue';
-import iconQuestion from "../../assets/icons/providers/icon_circle_question.svg"
+import iconQuestion from "../assets/icons/providers/icon_circle_question.svg"
 import Popper from "@/components/Popper/Popper.vue";
 
 export default defineComponent({
