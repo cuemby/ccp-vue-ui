@@ -5,6 +5,7 @@ import * as path from 'path'
 import typescript2 from 'rollup-plugin-typescript2';
 // @ts-ignore
 import dts from "vite-plugin-dts";
+import {fileURLToPath, URL} from "node:url";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -59,7 +60,8 @@ export default defineConfig({
   resolve: {
     alias: {
       // @ts-ignore
-      '@': path.resolve(__dirname, 'src'),
+     // '@': path.resolve(__dirname, 'src'),
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 })

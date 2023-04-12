@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    //...
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
@@ -19,6 +18,9 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
+    "src/**/*.vue",
+    "env.d.ts",
+    "src/**/*",
     "src/**/*.vue"
   ],  "references": [{ "path": "./tsconfig.node.json" }]
 }
